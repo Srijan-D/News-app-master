@@ -46,25 +46,25 @@ const fetchNews = async (
         next: isDynamic ? { revalidate: 0 } : { revalidate: 20 },
         headers: {
             "Content-Type": "application/json",
-            Authorization: `APIKey ${process.env.STEPZEN_API_KEY}`
+            Authorization: `ApiKey ${process.env.STEPZEN_API_KEY}`
         },
         body: JSON.stringify({
             query,
             variables: {
-                access_key: process.env.STEPZEN_API_KEY,
+                access_key: process.env.MEDIASTACK_API_KEY,
                 categories: category,
                 keywords: keywords,
             }
         })
     }
     )
-    console.log("Loading", category, keywords)
+    // console.log("Loading", category, keywords)
 
     const newsResponse = await res.json();
 
-    // const news = sortNewsByImage(newsResponse.data.myQuery)
+    const news = sortNewsByImage(newsResponse.data.myQuery)
 
-    return newsResponse;
+    return news;
 }
 
 
