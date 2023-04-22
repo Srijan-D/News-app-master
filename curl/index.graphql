@@ -23,13 +23,12 @@ type Root {
 
 type Query {
   myQuery(
-  access_key: String, 
-  countries: String,
-  categories: String, 
-  limit: String,
-  offset: String,
-  sort : String,
-  keywords: String,
-  ): Root
-    @rest(endpoint: "http://api.mediastack.com/v1/news")
+    access_key: String
+    countries: String
+    categories: String
+    limit: String
+    offset: String
+    sort: String
+    keywords: String
+  ): Root @rest(endpoint: "http://api.mediastack.com/v1/news")
 }
