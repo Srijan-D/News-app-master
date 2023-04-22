@@ -1,14 +1,15 @@
 import { gql } from "graphql-request"
+import sortNewsByImage from "./sortNewsByImage";
 const fetchNews = async (
     category?: Category | string,
-    keyword?: string,
+    keywords?: string,
     isDynamic?: boolean,
 ) => {
     const query = gql`
     query MyQuery(
         $access_key: String!
         $categories: String!
-        $keywords: String!
+        $keywords: String
     ) {
         myQuery(
             access_key: $access_key
@@ -45,11 +46,26 @@ const fetchNews = async (
         next: isDynamic ? { revalidate: 0 } : { revalidate: 20 },
         headers: {
             "Content-Type": "application/json",
-            Authorization: `Apikey ${process.env.STEPZEN_API_KEY}`
-        }
-    })
+            Authorization: `APIKey ${process.env.STEPZEN_API_KEY}`
+        },
+        body: JSON.stringify({
+            query,
+            variables: {
+                access_key: process.env.STEPZEN_API_KEY,
+                categories: category,
+                keywords: keywords,
+            }
+        })
+    }
+    )
+    console.log("Loading", category, keywords)
 
+    const newsResponse = await res.json();
+
+    // const news = sortNewsByImage(newsResponse.data.myQuery)
+
+    return newsResponse;
 }
-//http://api.mediastack.com/v1/news?access_key=093d71c51c61edd065631b084c515218&categories=health,sports&limit=100
+
 
 export default fetchNews
