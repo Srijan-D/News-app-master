@@ -9,7 +9,7 @@ function sortNewsByImage(news: NewsResponse) {
     //or we spread
 
     const sortedNews = {
-        pagination: news.pagination,
+        pagination: news.pagination,    
         data: [...newsWithImages, ...newsWithoutImages]
     }
 
