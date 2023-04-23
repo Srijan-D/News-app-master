@@ -5,6 +5,7 @@ const fetchNews = async (
     keywords?: string,
     isDynamic?: boolean,
 ) => {
+    // assigning few dynamic values
     const query = gql`
     query MyQuery(
         $access_key: String!
