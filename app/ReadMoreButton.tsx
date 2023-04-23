@@ -11,7 +11,7 @@ function ReadMoreButton({ article }: Props) {
             .map(([key, value]) => `${key}=${value}`)
             .join("&")
         router.push(`/article?${queryString}`)
-      
+
     }
 
     return (
