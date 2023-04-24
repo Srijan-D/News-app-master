@@ -6,4 +6,9 @@
   .navLink {
     @apply hover:underline pt-5 cursor-pointer decoration-orange-400 text-center active:underline underline-offset-8 rounded-full hover:font-bold capitalize hover:scale-110 transition-transform duration-200 ease-out;
   }
+  .Title{
+    @apply text-4xl font-serif capitalize px-10 pt-5 underline decoration-orange-400 decoration-2 underline-offset-4
+    decoration-double 
+  }
+
 }
