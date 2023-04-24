@@ -9,7 +9,7 @@ type Props = {
 async function SearchPage({ searchParams }: Props) {
     const news: NewsResponse = await fetchNews(
         "general",
-        searchParams?.term,
+        searchParams?.term,//use this as keyword and create a dynamic request
         true//we need to refetch cant give back stale data
     )
 

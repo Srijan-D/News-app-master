@@ -5,9 +5,9 @@ import NewsList from "./NewsList";
 async function Home() {
   const news: NewsResponse = await fetchNews(categories.join(","))
 
-  // console.log(news)
   return <div>
-    <NewsList news={news}/>
+    <NewsList news={news} />
+
   </div>;
 }
 

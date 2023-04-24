@@ -1,5 +1,6 @@
 
 import { notFound } from "next/navigation"
+import TimeStamp from "../TimeStamp";
 
 type Props = {
     searchParams?: Article
@@ -9,7 +10,7 @@ function ArticlePage({ searchParams }: Props) {
     if (
         (searchParams && Object.entries(searchParams).length === 0) || !searchParams
     ) return notFound()
-    // console.log(searchParams)   
+
     const article: Article = searchParams;
 
     return (
@@ -23,11 +24,13 @@ function ArticlePage({ searchParams }: Props) {
                     />
                 )}
                 <div className="px-10">
-                    <h1 className="Title px-0 no-underline pb-2">{article.title}</h1>
+                    <h1 className="Title px-0  pb-2">{article.title}</h1>
                     <div className="flex divide-x-2 space-x-4">
                         <h2 className="font-bold">By: {(article.author !== null) ? article.author : "unknown"}</h2>
                         <h2 className="font-bold pl-4">Source: {(article.source !== null) ? article.source : "unknown"}</h2>
-                        <p className="pl-4">{article.published_at}</p>
+                        <p className="pl-4">
+                            <TimeStamp time={article.published_at} />
+                        </p>
                     </div>
                     <p className="pt-4">{article.description}</p>
                 </div>
