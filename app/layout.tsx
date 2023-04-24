@@ -10,7 +10,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html>
+    <html suppressHydrationWarning>
       <Providers>
         <body className="bg-gray-100 dark:bg-zinc-900  transition-all duration-700">
           <Header />
