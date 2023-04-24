@@ -23,8 +23,8 @@
 <h2>Installation and Usage</h2>
 <ol>
   <li>Clone the repository: <code>git clone https://github.com/your-username/news-web-app.git</code></li>
-  <li>Install dependencies: <code>npm install</code></li>
-  <li>Start the development server: <code>npm run dev</code></li>
+  <li>Install dependencies: <code>npm install</code> or <code>yarn</code> or <code>pnpm install</code></li>
+  <li>Start the development server: <code>npm run dev</code> or <code>yarn run dev</code> or <code>pnpm run dev</code></li>
   <li>Open <a href="http://localhost:3000">http://localhost:3000</a> in your browser to view the app.</li>
 </ol>
 <h2>Contributing</h2>
