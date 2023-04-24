@@ -29,3 +29,11 @@
 </ol>
 <h2>Contributing</h2>
 <p>Contributions are welcome! Please feel free to open issues or pull requests.</p>
+preview of the app can be found below
+![image](https://user-images.githubusercontent.com/87586713/234116248-eb3b070d-20e8-4f02-bddc-6c395b68b338.png)
+![image](https://user-images.githubusercontent.com/87586713/234116401-3a704320-11a1-4aef-98a0-1b76b007198a.png)
+![image](https://user-images.githubusercontent.com/87586713/234117078-13ce184f-9783-49dc-a7d2-4cacea8eb0a4.png)
+
+
+
+
