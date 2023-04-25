@@ -1,3 +1,8 @@
+preview of the app can be found below
+![image](https://user-images.githubusercontent.com/87586713/234116248-eb3b070d-20e8-4f02-bddc-6c395b68b338.png)
+![image](https://user-images.githubusercontent.com/87586713/234116401-3a704320-11a1-4aef-98a0-1b76b007198a.png)
+![image](https://user-images.githubusercontent.com/87586713/234117078-13ce184f-9783-49dc-a7d2-4cacea8eb0a4.png)
+
 <h1>News Web Application with Live Data</h1>
 <p>This is a web application built with <strong>Next13.3</strong>, <strong>TypeScript</strong>, and <strong>GraphQL</strong>, utilizing <strong>StepZen</strong> for generating TypeScript definitions automatically. Live data is pulled via the <strong>Mediastash API</strong> with revalidation of stale data every 20 seconds using next revalidate, prebuilt pages along with instant caching to reduce wait time and pulling dynamic data at each request. The application also includes a dark/light mode feature using <strong>next-themes</strong> and <strong>tailwindcss</strong>.</p>
 <h2>Technologies Used</h2>
@@ -29,11 +34,5 @@
 </ol>
 <h2>Contributing</h2>
 <p>Contributions are welcome! Please feel free to open issues or pull requests.</p>
-preview of the app can be found below
-![image](https://user-images.githubusercontent.com/87586713/234116248-eb3b070d-20e8-4f02-bddc-6c395b68b338.png)
-![image](https://user-images.githubusercontent.com/87586713/234116401-3a704320-11a1-4aef-98a0-1b76b007198a.png)
-![image](https://user-images.githubusercontent.com/87586713/234117078-13ce184f-9783-49dc-a7d2-4cacea8eb0a4.png)
-
-
 
 
