@@ -1,4 +1,4 @@
-Currecntly: fixing few bugs in production related to caching and read 
+Currecntly: fixing few bugs in production related to caching and read the more ts file <br> 
 preview of the app can be found below
 ![image](https://user-images.githubusercontent.com/87586713/234116248-eb3b070d-20e8-4f02-bddc-6c395b68b338.png)
 ![image](https://user-images.githubusercontent.com/87586713/234116401-3a704320-11a1-4aef-98a0-1b76b007198a.png)
