@@ -2,6 +2,7 @@ import './globals.css'
 
 import Header from "./Header";
 import Providers from "./Providers";
+import { Analytics } from '@vercel/analytics/react';
 
 //for tailwind css
 export default function RootLayout({
